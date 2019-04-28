@@ -1,38 +1,16 @@
-'use strict';
+//Install express server
+const express = require('express');
+const path = require('path');
 
-var app = require('./index');
-var http = require('http');
- var webSockets = require('./app/lib/web_sockets'); 
+const app = express();
 
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/<name-of-app>'));
 
-var mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
-var mongoString = require('./config/mongo.json').url;
-
-var mongoLogger = function(coll, method, query, doc) {
-  global.log.debug(coll + '.' + method + '( ' + JSON.stringify(query) +  ', ' + JSON.stringify(doc) + ' )');
-};
-
-mongoose.set('debug', true); // mongoose.set('debug', mongoLogger)
-
-mongoose.connect(mongoString, function(error, db) {
-  if (error) {
-    global.log.error(error);
-  } else {
-    global.log.info('Connected to MongoDB');
-  }
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
 });
 
-
-
-var server = http.Server(app);
-server.listen(process.env.PORT || 3500);
-
-server.on('listening', function () {
-  global.log.info('Server listening on http://localhost:%d', this.address().port);
-});
-
-
-global.io = require('socket.io').listen(server);
-global.io.on('connection', webSockets.newConnection);
-
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
