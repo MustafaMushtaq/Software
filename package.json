@@ -6,13 +6,15 @@
   "license": "ISC",
   "scripts": {
     "build": "webpack -p",
-    "start": "node server.js | bunyan",
+    "start": "node server.js",
     "migrate": "sequelize db:migrate | bunyan",
     "server-start": "nodemon server.js | bunyan --output short --color",
     "client-start": "webpack -d --watch",
     "dev-start": "concurrently --kill-others \"npm run server-start\" \"npm run client-start\""
   },
   "dependencies": {
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler-cli": "^7.2.14",
     "@angular/common": "^7.2.10",
     "@angular/compiler": "^7.2.10",
     "@angular/core": "^7.2.10",
@@ -58,7 +60,10 @@
     "zone.js": "^0.9.0"
   },
   "devDependencies": {
+    "@angular/cli": "^7.3.8",
+    "@angular/compiler-cli": "^7.2.14",
     "concurrently": "^4.1.0",
+    "enhanced-resolve": "^3.3.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "mocha": "^6.0.2",
     "nodemon": "^1.18.11",
