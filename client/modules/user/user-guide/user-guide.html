@@ -1,0 +1,19 @@
+<app-header-footer [title]=title> </app-header-footer>
+
+<div class="container-fluid mt-5">
+  <div class="row ml-3 mr-3 ">
+    <div class="col pr-0 pl-0 mt-5" *ngFor="let guide of userGuide; let i= index">
+      <div class="" [ngClass]="i%2 !=0?'card-deff': 'card-short'" [routerLink]="[guide.link]">
+        <div class="row p-5">
+         
+            <div class="col-md-12">
+              {{guide.name}}
+            </div >
+            <div class="col-md-12">{{guide.description}}</div>
+
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>

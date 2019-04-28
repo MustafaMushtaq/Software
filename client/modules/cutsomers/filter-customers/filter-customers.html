@@ -1,0 +1,52 @@
+<app-header-footer  [title]='title'> </app-header-footer>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-6">
+        <span class="top-text">
+          <p>FILTER CUSTOMERS</p>
+        </span>
+
+        <div class="col-md-5 mt-2 filter-select">
+          <select class="form-control pl-0">
+            <option>Choose product</option>
+            <option>Default select</option>
+            <option>Default select</option>
+          </select>
+          <select class="form-control mt-5 pl-0">
+            <option>Choose joining year</option>
+          </select>
+          <select class="form-control mt-5 pl-0">
+            <option>Choose City</option>
+          </select>
+          <select class="form-control mt-5 pl-0">
+            <option>Choose Expenditure Range</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-7 top-dist">
+            <div>
+                <span class="top-text">
+                  <p class="mb-0">VIEW ALL CUSTOMERS</p>
+                  <div class="col-md-12 form-buttom">
+                      <button type="submit" class="btn btn-primary ">GO</button>
+                    </div>
+                </span>
+              </div>
+              <div class="top-dist">
+                <span class="top-text ">
+                  <p>SEARCH CUSTOMERS</p>
+                  <div class="form-group">
+                      <input type="text" class="form-control" [(ngModel)]="customerId" name="customerId" id="customerId" placeholder="CUSTOMER ID"  >
+                    </div>
+                    <div class="col-md-12 form-buttom text-center">
+                    <button type="submit" class="btn btn-primary">GO</button>
+                  </div>
+                </span>
+              </div>
+        </div>
+   
+      </div>
+  </div>
+</div>

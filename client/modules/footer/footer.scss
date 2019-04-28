@@ -1,0 +1,25 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 9px;
+  background-color:#4759ff !important;
+  color: white;
+  text-align: center;
+  z-index: 12;
+  img{
+    height: 14px !important;
+    width: 15px !important;
+    top: 5px !important;
+  }
+}
+.multi-icon{
+  background-color:#4759ff !important;
+  img{
+    height: 66px !important;
+    width: 109px !important;
+    top: -21px !important;
+    right: 14px !important;
+  }
+}

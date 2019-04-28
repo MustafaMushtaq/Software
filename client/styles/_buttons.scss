@@ -1,0 +1,84 @@
+.btn-gray {
+  background-color: gray !important;
+  padding-top: 10px !important;
+  padding-bottom: 18px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  color: white !important;
+  text-decoration: underline;
+  opacity: 0.8;
+  font-weight: 600 !important;
+  font-size: 28px;
+  border-radius: 2px !important;
+
+}
+.btn-blue-fill {
+  background-color: rgb(50, 110, 241) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding-right: 28px !important;
+  padding-left: 28px !important;
+  font-size: 28px;
+  border-radius: 2px !important;
+
+}
+
+.btn-blue{
+  border-color: rgb(50, 110, 241) !important;
+  border: 2px solid rgb(50, 110, 241) !important;
+  background-color: transparent !important;
+  color: rgb(50, 110, 241) !important;
+  padding-right: 28px !important;
+  padding-left: 28px !important;
+  font-weight: 600 !important;
+  &:hover {
+  color: rgb(50, 110, 241) !important;
+  padding-right: 28px !important;
+  padding-left: 28px !important;
+  }
+
+  &:focus {
+    outline: none !important;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+}
+
+
+// .form-group {
+//   label {
+//     font-size: 16px ;
+//     margin-top: 10px;
+//     font-weight: 600 ;
+//     color: blue !important;
+//   }
+
+//   input.form-control {
+//     padding: 10px !important;
+//     height: 45px !important;
+//     background-color: rgb(233, 244, 252) !important;
+//     color: #354168 !important;
+//     font-size: 15px !important;
+//     border-color: blue !important;
+//     font-weight: 600;
+
+//     &:focus {
+//       outline: none !important;
+//       border-color: #E6E7EF !important;
+//       outline: 0;
+//       box-shadow: none !important;
+//     }
+//   }
+//   }
+
+.form-buttom{
+button{
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  font-size: 12px !important;
+  
+}
+}

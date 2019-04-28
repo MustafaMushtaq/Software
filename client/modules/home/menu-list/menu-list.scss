@@ -1,0 +1,41 @@
+.center-comp{
+  height: 100vh;
+  text-align: center;
+justify-content: center;
+display: flex;
+position: relative;
+}
+.circle {
+  position: relative;
+  margin: 20px;
+  height: 120px;
+  width: 120px;
+  // background-color: orange;
+  border-radius: 50%;
+  &:focus{
+    outline: none !important
+  }
+  cursor: pointer;
+}
+
+.circle:before {
+  position: absolute;
+  content: '';
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 2px dashed rgb(50, 110, 241);
+  top: -13px;
+  left: -5px;
+  border-radius: inherit;
+  animation: spin 10s linear infinite;
+}
+
+.menu-list {
+  justify-content: center;
+  display: flex;
+
+  .menu-text {
+    position: relative;
+    top: 39px;
+  }
+}

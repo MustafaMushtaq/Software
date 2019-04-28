@@ -1,0 +1,60 @@
+<app-header-footer  [title]=title> </app-header-footer>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6  center-form ">
+            <div class="col-md-8 mt-5">
+
+        <div class="top-text text-left"> <p>ADD A NEW CUSTOMER</p>  </div>   
+
+                    <form ngNativeValidate (ngSubmit)="createCustomer()" >
+                                <div class="form-group">
+                                  <input type="text" class="form-control" [(ngModel)]="customer.fullName" name="fullName" id="fullname" placeholder="FULL NAME"  required>
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control mt-3" [(ngModel)]="customer.address" name="address" id="address" placeholder="POSTAL ADDRESS"  >
+                                </div>
+                                <div class="form-group">
+                                  <span class="regular-select">
+                                    <div class="form-group">
+                                        <select class="form-control pl-0" [(ngModel)]="customer.gender" name="gender" id="gender">
+                                            <option value="" selected disabled>GENDER</option>
+                                            <option value="male" >Male</option>
+                                            <option value="female" >Female</option>
+                                          </select> 
+                                    </div>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control mt-3" [(ngModel)]="customer.phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="MOBILE NUMBER" required >
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control mt-3" [(ngModel)]="customer.email" name="email" id="email" placeholder="EMAIL ADDRESS" required >
+                                </div>
+                        <div class="col-md-12 form-buttom text-center">
+                                <button type="submit" class="btn btn-primary w-130">ADD</button>
+
+                        </div>
+                          </form>
+                
+            </div>
+        </div>
+        <div class="col-md-6  center-form">
+         <div class="col-md-8 mt-5">
+            <div class="top-text text-left"><p> DELETE AN EXISTING CUSTOMER</p></div> 
+
+         <form ngNativeValidate (ngSubmit)="deleteCustomer()" >
+
+         <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="customerId" name="id" id="id" placeholder="CUSTOMER ID"  required>
+              </div> 
+              <div class="col-md-12 form-buttom text-center">
+                    <button type="submit" class="btn btn-primary ">DELETE</button>
+
+            </div>
+        </form>
+{{statusMessage}}
+        </div>
+        </div>
+    </div>
+</div>

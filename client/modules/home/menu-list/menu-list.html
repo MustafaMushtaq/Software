@@ -1,0 +1,14 @@
+<app-header-footer  [title]='title'> </app-header-footer>
+<div class="container-fluid mt-5">
+<div class="row center-comp">
+    <div class="col-md-3 menu-list " *ngFor="let item of menu; let i=index">
+        <div class="circle text-center" (click)="navigateTo(item.link)">
+        <span class="menu-text">
+                {{item.menuName}}
+        </span>        
+        </div>
+
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

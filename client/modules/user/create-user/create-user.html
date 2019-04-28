@@ -1,0 +1,40 @@
+<app-header-footer [title]=title> </app-header-footer>
+
+<div class="sign-up-component">
+
+  <div class="sign-up-form-section row m-0">
+      <img src="./../../../assets/images/default-user-image.png" alt="">
+    
+    <div class="col-md-4">
+
+      <div class="header-section pb-2">
+      </div>
+      
+      <form ngNativeValidate (ngSubmit)="signUp()" name="sign-up">
+        <div class="form-group form-one">
+          <label for="">Name</label>
+          <input type="text" class="form-control mb-3" [(ngModel)]="user.fullName" id="fullName" name="fullName"
+            placeholder="First Name">
+            <label for="">E-mail</label>      
+          <input type="email" class="form-control mb-3" [(ngModel)]="user.email" id="email" name="email"
+            placeholder="johndoe@email.com" required>
+            <label for="">Mobile Number</label>
+            <input type="text" class="form-control mb-3" [(ngModel)]="user.phoneNumber" id="phoneNumber" name="userName"
+            placeholder="Phone Number" required>
+            <label for="">Password</label>
+            <input type="password" class="form-control mb-3" [(ngModel)]="user.password" id="password" name="password"
+            placeholder="Password" required>
+          <label for="">Joining Date</label>            
+            <input type="date" class="form-control mb-3" [(ngModel)]="user.joiningDate" id="joiningDate" name="lastjoiningDateName"
+            placeholder="Joining Date" required>
+            <div class="col-md-12 mt-5 form-buttom">
+                <button type="submit" class="btn btn-primary ">Create</button>
+              </div>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+</div>

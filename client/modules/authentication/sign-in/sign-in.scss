@@ -1,0 +1,22 @@
+.sign-in-form-section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sign-in-component {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-group {
+  label {
+    float: left !important;
+  }
+}

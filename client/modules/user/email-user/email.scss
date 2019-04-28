@@ -1,0 +1,17 @@
+.email-form{
+text-align: center;
+justify-content: center;
+display: flex;
+align-items: center;
+position: relative;
+.form-group{
+.text-area.form-control{
+    height: 250px;
+    border-radius: 26px !important;
+}
+input.form-control{
+    height: 80px;
+    border-radius: 26px !important;
+}
+}
+}

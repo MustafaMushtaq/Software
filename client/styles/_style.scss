@@ -1,0 +1,52 @@
+.text-right{
+text-align: right !important;
+}
+.text-left{
+text-align: left !important;
+}
+.float-right{
+right:0 !important;
+}
+.float-left{
+     left: 0 !important;
+}
+.text-center{
+     text-align: center !important
+}
+.card-def{
+  &:focus{
+    outline: none !important;
+  }
+}
+.card-deff{
+  &:focus{
+    outline: none !important;
+  }
+}
+.heading-nav{
+     font-size: 29px;
+     font-weight: 600;
+     color: white;
+     font-family: "Times New Roman", Times, serif;
+   }
+   .button-home{
+     position: absolute;
+   }
+ 
+
+ ::placeholder {
+     color: rgb(118, 158, 243)  !important;
+     opacity: 0.5 !important; /* Firefox */
+   }
+   
+   :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(118, 158, 243)  !important;
+    opacity: 0.5 !important; /* Firefox */
+
+   }
+   
+   ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(118, 158, 243)  !important;
+    opacity: 0.5 !important; /* Firefox */
+
+   }

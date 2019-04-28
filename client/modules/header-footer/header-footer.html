@@ -1,0 +1,11 @@
+<ul>
+    <span class="heading-nav ml-2"> {{title}} </span>
+    <li><a class="active" (click)="logOut()">Logout</a></li>
+    <li><a class="nav-link active mtp" routerLink="/user-guide" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Guide</a></li>
+
+  </ul>
+  <div class="row m-0 float-right button-home">
+    <!-- <button type="submit" [routerLink]="['/home-menu']" class="btn btn-blue mt-2">Home</button> -->
+    <button type="submit"  routerLink="/home-menu" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="btn btn-blue mt-2">Home</button>
+  </div>
+ 

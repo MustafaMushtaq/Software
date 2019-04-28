@@ -1,0 +1,28 @@
+<app-header-footer  [title]='title'> </app-header-footer>
+
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12 email-form">
+      <div class="col-md-10 ">
+        <form ngNativeValidate (ngSubmit)="signUp()" name="sign-up">
+          <div class="form-group form-one">
+            <label for="">Name</label>
+            <input type="text" class="form-control mb-3"id="email" name="email"
+              placeholder="SUBJECT">
+              <label for="">E-mail</label>      
+            <textarea class="text-area form-control mb-3"  id="des" name="des"
+              placeholder="BODY" required></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="submit" class="btn btn-blue mr-2">SELECT RECIPIENTS</button>
+              <button type="submit" class="btn btn-blue">SEND TO ALL</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+
+<app-header-footer  [title]='title'> </app-header-footer>
+<div class="sign-in-component">
+
+  <div class="sign-in-form-section row m-0">
+    <p>Please enter your credentials provided by the administrator. If you need help please click the help button at the
+      top right corner of the screen.</p>
+    <div class="col-md-4">
+
+
+      <form ngNativeValidate (ngSubmit)="signIn()" name="sign-in">
+        <div class="form-group form-one">
+          <label for="name"> Name</label>
+          <input type="text" class="form-control mb-3" [(ngModel)]="user.fullName" id="name" name="name"
+            placeholder="johndoe@email.com">
+          <label for="name"> Email</label>
+          <input type="email" class="form-control mb-3" [(ngModel)]="user.email" id="email" name="email"
+            placeholder="johndoe@email.com" required>
+          <label for="name"> Password</label>
+
+          <input type="password" class="form-control mb-3" [(ngModel)]="user.password" id="password" name="password"
+            placeholder="Password" required>
+          <button type="submit" class="btn btn-blue">Sign in</button>
+        </div>
+        </form>
+        {{statusMessage}}
+    </div>
+  </div>
+</div>

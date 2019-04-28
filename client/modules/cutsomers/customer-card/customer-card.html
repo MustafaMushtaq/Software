@@ -1,0 +1,39 @@
+<app-header-footer  [title]='title'> </app-header-footer>
+
+
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12 center-form">
+            <div class="col-md-4">
+
+                    <form ngNativeValidate (ngSubmit)="createProduct()" >
+                                <div class="form-group form-one">
+                                  <input type="text" class="form-control" [(ngModel)]="customer.fullName" name="name" id="name" placeholder=" NAME" readonly>
+                                </div>
+                                <div class="form-group form-one">
+                                  <input type="email" class="form-control" [(ngModel)]="customer.email" name="email" id="email" placeholder="EMAIL" readonly>
+                                </div>
+                                <div class="form-group form-one">
+                                  <input type="text" class="form-control" [(ngModel)]="customer.phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="MOBILE NUMBER" readonly>
+                                </div>
+                                <div class="form-group form-one">
+                                  <input type="text" class="form-control" [(ngModel)]="customer.address" name="address" id="address" placeholder="ADDRESS" readonly>
+                                </div>
+                                <div class="form-group form-one">
+                                  <input type="text" class="form-control mt-3" [(ngModel)]="customer.createdAt" name="date" id="date" placeholder="DATE" readonly>
+                                </div>
+                          
+                                <div class="form-group form-one">
+                                  <input type="text" class="form-control mt-3" [(ngModel)]="customer.totalPurchases" name="totalPurchases" id="totalPurchases" placeholder="TOTAL PURCHASES"  readonly>
+                                </div>
+                                <div class="form-group form-one">
+                                    <input type="text" class="form-control mt-3" [(ngModel)]="customer._id" name="_id" id="_id" placeholder="CUSTOMER ID" readonly >
+                                  </div>
+                    
+                          </form>
+                
+            </div>
+        </div>
+     
+    </div>
+</div>

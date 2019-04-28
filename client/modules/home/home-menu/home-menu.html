@@ -1,0 +1,38 @@
+<div class="row m-0 position-head">
+  <div class="col-12 p-2">
+    <ul>
+      <li><a class="active"(click)="underConstruction('Managerial Accounting')">Managerial Accounting </a></li>
+      <li><a (click)="underConstruction('Financial Accounting')">Financial Accounting </a></li>
+      <li><a (click)="underConstruction('HRM')">HRM</a></li>
+      <li><a [routerLink]="['/menu-list']">CRM</a></li>
+      <li><a (click)="underConstruction('Security')">Security</a></li>
+    <li><a class="active" (click)="logOut()">Logout</a></li>
+      <li>
+    <img class="" src="./../../../assets/images/facebook-twitter-instagram-icons.png" alt="">  
+      </li>
+    </ul>
+  </div>
+  
+</div>
+<img src="./../../../assets/images/back-home.png" alt="">
+<div class="sign-in-component">
+
+  <div class="home-in-form-section row w-100 m-0">
+    <div class="col-md-4">
+      <div>
+        <h1>Green Desert Landscapes</h1>
+        <p>ERP System</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6" [hidden]="!isAdmin">
+          <button type="button" class="btn btn-blue-fill mr-3" [routerLink]="['/create-user']">Create New User</button>
+
+        </div>
+        <div [ngClass]="isAdmin ? 'col-md-6' : 'col-md-12'">
+          <button type="button" [routerLink]="['/user-guide']" class="btn btn-blue">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

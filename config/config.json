@@ -1,0 +1,42 @@
+{
+  "specialization": {
+  },
+  "middleware": {
+    "static": {
+      "module": {
+        "arguments": [
+          "path:./.build"
+        ]
+      }
+    },
+    "router": {
+      "module": {
+        "arguments": [
+          {
+            "directory": "path:./app/controllers"
+          }
+        ]
+      }
+    },
+    "response-sender": {
+      "enabled": true,
+      "priority": 80,
+      "route": "/api",
+      "module": {
+        "name": "path:./app/lib/response/responseAppender"
+      }
+    },
+    "authenticationWeb": {
+      "enabled": true,
+      "priority": 100,
+      "route": "\/api\/v1\/web((?!$))((?!\/root\/))((?!\/users\/sign-up))((?!\/users\/sign-in))*",
+      "module": {
+        "name": "path:./app/lib/auth"
+      }
+    }
+  },
+  "app": {
+    "url": "",
+    "jwtSecret": "ThisIsSimustream"
+  }
+}
