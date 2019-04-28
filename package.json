@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "ISC",
   "scripts": {
-    "build": "webpack -p",
+    "build": "",
     "start": "node server.js | bunyan",
     "migrate": "sequelize db:migrate | bunyan",
     "server-start": "nodemon server.js | bunyan --output short --color",
