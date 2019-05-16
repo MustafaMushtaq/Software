@@ -16,11 +16,7 @@ module.exports = function() {
   admin.addAdmin = async function() {
 
     let admin = await db.Users.findOne({ role: 'admin' });
-    console.log("asdasdasdasdasdas..........////////////////////",admin)
-
     if (!admin) {
-      console.log("asdasdasdasdasdas..........////////////////////",admin)
-
       let createAdmin = await db.Users.create({
         fullName: "super-admin",
         role: "admin",

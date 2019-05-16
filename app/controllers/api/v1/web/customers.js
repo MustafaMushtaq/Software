@@ -14,7 +14,7 @@ module.exports = function (router) {
   }))
 
   router.delete('/delete-customer/:customerId', asyncMiddleware(async (req, res, next) => {
-    let stream = await db.Customers.delete({
+    let stream = await db.Customers.deleteOne({
       _id: req.params.customerId
     })
     res.http200({

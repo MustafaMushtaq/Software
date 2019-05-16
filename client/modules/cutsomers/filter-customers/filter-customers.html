@@ -30,7 +30,7 @@
                 <span class="top-text">
                   <p class="mb-0">VIEW ALL CUSTOMERS</p>
                   <div class="col-md-12 form-buttom">
-                      <button type="submit" class="btn btn-primary ">GO</button>
+                      <button type="submit" class="btn btn-primary" (click)="getCustomers()">GO</button>
                     </div>
                 </span>
               </div>
@@ -48,5 +48,27 @@
         </div>
    
       </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row ml-3 mr-3 ">
+    <div class="col-md-3" *ngFor="let item of customers; let i= index">
+      <div class="" class="card-short mt-5" >
+        <div class="row p-5 text-center">
+          <div class="col-md-12 text-center user-img">
+      <img class="" src="./../../../assets/images/default-user-image.png" alt="">         
+          </div >
+            <div class="col-md-12 pt-2">
+              {{item.fullName}}
+            </div >
+            <div class="col-md-12">{{item.email}}</div>
+            <div class="col-md-12">{{item.phoneNumebr}}</div>
+
+          </div>
+
+      </div>
+    </div>
   </div>
 </div>

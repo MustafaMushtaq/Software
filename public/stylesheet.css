@@ -1,31 +1,3 @@
-.sign-up-form-section {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  position: relative;
-  height: 100vh;
-  align-items: center; }
-
-.card-deff {
-  height: 400px;
-  background-color: #8eadf1;
-  color: white !important;
-  font-weight: 600; }
-  .card-deff img {
-    border-radius: 25px;
-    height: 50px;
-    width: 50px; }
-
-.card-short {
-  height: 400px;
-  margin-top: 92px;
-  background-color: #8eadf1;
-  color: white !important;
-  font-weight: 600; }
-  .card-short img {
-    border-radius: 25px;
-    height: 50px;
-    width: 50px; }
 .red {
   color: red; }
   .red > .blud {
@@ -106,6 +78,23 @@ li a:hover {
 
 .mtp {
   margin-top: 7px !important; }
+.sign-in-form-section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.sign-in-component {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.form-group label {
+  float: left !important; }
 .footer {
   position: fixed;
   left: 0;
@@ -128,23 +117,6 @@ li a:hover {
     width: 109px !important;
     top: -21px !important;
     right: 14px !important; }
-.sign-in-form-section {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  position: relative; }
-
-.sign-in-component {
-  height: 100vh;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  position: relative; }
-
-.form-group label {
-  float: left !important; }
 .sign-up-form-section {
   text-align: center;
   justify-content: center;
@@ -159,6 +131,34 @@ li a:hover {
     border-radius: 73px;
     height: 125px;
     width: 125px; }
+.sign-up-form-section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  align-items: center; }
+
+.card-deff {
+  height: 400px;
+  background-color: #8eadf1;
+  color: white !important;
+  font-weight: 600; }
+  .card-deff img {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px; }
+
+.card-short {
+  height: 400px;
+  margin-top: 92px;
+  background-color: #8eadf1;
+  color: white !important;
+  font-weight: 600; }
+  .card-short img {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px; }
 .email-form {
   text-align: center;
   justify-content: center;

@@ -22,7 +22,8 @@ export class CreateCustomerComponent implements OnInit {
   }
   customerId:any="";
   customerRes:any="";
-  statusMessage:any=""
+  statusMessage:any="";
+  alert:any="";
   ngOnInit() {
   }
   createCustomer(){
@@ -36,11 +37,17 @@ export class CreateCustomerComponent implements OnInit {
   }
   
   deleteCustomer() {
-    this.customerService.deleteCustomerById(this.customerId).subscribe((res: any) => {
-      this.statusMessage = res.status.message
-      this.customerId="";
-    }, (error)=>{
-      this.statusMessage = "Something went wrong. Customer ID may be wrong."
-    })
+    var txt;
+    if (confirm("Delete customer?")) {
+      this.customerService.deleteCustomerById(this.customerId).subscribe((res: any) => {
+        this.statusMessage = res.status.message
+        this.customerId="";
+      }, (error)=>{
+        this.statusMessage = "Something went wrong. Customer ID may be wrong."
+      })
+    } else {
+      txt = "You pressed Cancel!";
+    }
+  
   }
 }
