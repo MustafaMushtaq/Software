@@ -1,7 +1,7 @@
 var Users = require('../../../../models/users.js');
 const {commonFunctions ,db ,validation} = global;
 module.exports = function (router) {
-
+// module 
   router.post('/create-customer',asyncMiddleware(async(req, res, next)=>{
     if(!req.body){
         throw "Customer details required"
